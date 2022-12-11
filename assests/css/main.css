@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   list-style: none;
-  text-decoration: none;
+  /* text-decoration: none; */
 }
 .padd-15{
   padding: 15px;
@@ -14,19 +14,41 @@
 .padd-y-15{
   padding: 15px 0
 }
+a{
+ color: var(--black-color);
+ text-decoration: 5px
+}
 button{
+  background: none;
+  outline: none;
+  border: none
+}
+button:active svg{
+  fill: var(--mid-white-color)
+}
+.button{
   background: var(--button-color);
   box-shadow: var(--button-shadow);
   outline: none;
   border:none;
-  padding: 5px;
-  border-radius: 10pc
+  padding: 10px;
+  border-radius: 50%
 }
 header{
+  background: var(--white-color);
   width: 100%;
-  height: 50px;
+  min-height: 50px;
   position: sticky;
   top: 0;
+  border-bottom: 1px solid var(--border-color);
+  overflow: hidden
+}
+header .nav-links{
+  display: none;
+}
+header .nav-links li{
+  display: block;
+  margin: 10px 0;
 }
 nav{
   width: 100%;
