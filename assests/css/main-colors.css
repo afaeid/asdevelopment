@@ -1,0 +1,8 @@
+:root{
+  --general-font: 'sans-serif';
+  --black-color: rgba(0, 0, 0, 1);
+  --white-color:rgba(255, 255, 255, 1);
+  --button-color:#848EFB;
+  --border-color: rgba(174, 175, 183, 1);
+  --button-shadow: 1px 1px 5px 1px rgba(220, 220, 220, 1);
+}
