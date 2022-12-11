@@ -34,6 +34,11 @@ button:active svg{
   padding: 10px;
   border-radius: 50%
 }
+.active-page{
+  background: var(--button-color);
+  padding: 5px;
+  border-radius: 2px
+}
 header{
   background: var(--white-color);
   width: 100%;
