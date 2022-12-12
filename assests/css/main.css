@@ -15,7 +15,7 @@
   padding: 15px 0
 }
 body{
-  background: var(--button-color);
+  background: var(--bg-color);
 }
 a{
  color: var(--black-color);
@@ -34,10 +34,10 @@ button:active svg{
   box-shadow: var(--button-shadow);
   outline: none;
   border:none;
-  padding:8px 10px;
 }
 .button{
-  border-radius: 50%
+  border-radius: 50%;
+  padding: 5px 10px;
 }
 .box{
   border-radius: 10px;
@@ -70,4 +70,20 @@ nav{
   align-items:center;
   justify-content: space-between;
   position: relative;
+}
+.welcome-box{
+  text-align: center;
+  background-image: url("../images/celebration.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* background-color: #000; */
+}
+.welcome-box p{
+  font-size: 18px
 }
