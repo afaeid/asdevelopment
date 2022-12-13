@@ -30,6 +30,9 @@ button{
   outline: none;
   border: none
 }
+h2{
+  margin: 5px 0;
+}
 button:active svg{
   fill: var(--mid-white-color)
 }
@@ -92,11 +95,23 @@ nav{
 .welcome-box p{
   font-size: 18px
 }
+.code-show-box-cover{
+  width: 95vw;
+  margin: 0 auto;
+  text-align: center;
+}
+.code-show-box-cover h2{
+  margin: 10px 0;
+}
+.code-show-box-cover p{
+  font-size: 16px;
+  margin: 5px 0;
+}
 .code-show-box{
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
 }
 .style-code-box{
