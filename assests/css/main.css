@@ -34,7 +34,7 @@ h2{
   margin: 5px 0;
 }
 button:active svg{
-  fill: var(--mid-white-color)
+  fill: var(--mid-white-color);
 }
 .button,.box, .style-code-box{
   background: var(--white-color);
@@ -55,21 +55,34 @@ button:active svg{
   border-radius: 2px
 }
 header{
-  background: var(--white-color);
+  background: #0E1116;
   width: 100%;
   min-height: 50px;
   position: sticky;
   top: 0;
   border-bottom: 1px solid var(--border-color);
   overflow: hidden;
-  z-index: 10
+  z-index: 10;
+}
+header svg{
+  fill: #FFFFFF;
 }
 header .nav-links{
   display: none;
 }
 header .nav-links li{
+  min-height: 20px;
   display: block;
   margin: 10px 0;
+  /* border-top: 1px solid #9C9C9C; */
+  display: flex;
+  align-items: center;
+}
+header .nav-links li a{
+  color: #fff;
+}
+header .nav-links li a:active{
+  color: var(--mid-white-color);
 }
 nav{
   width: 100%;
