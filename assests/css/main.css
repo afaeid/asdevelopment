@@ -35,6 +35,8 @@ h2{
 }
 button:active svg{
   fill: var(--mid-white-color);
+  transform: scale(0);
+  transition: 0.4s transform ease-in-out
 }
 .button,.box, .style-code-box{
   background: var(--white-color);
