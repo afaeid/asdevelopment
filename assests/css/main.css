@@ -36,9 +36,9 @@ h2{
 button:active svg{
   fill: var(--mid-white-color);
   transform: scale(0);
-  transition: 0.4s transform ease-in-out
+  transition: 0.4s transform ease
 }
-.button,.box, .style-code-box{
+.button,.box, .style-code-box, .code-show-box-cover{
   background: var(--white-color);
   box-shadow: var(--button-shadow);
   outline: none;
@@ -47,9 +47,6 @@ button:active svg{
 .button{
   border-radius: 50%;
   padding: 5px 10px;
-}
-.box{
-  border-radius: 10px;
 }
 .active-page{
   background: var(--button-color);
@@ -114,6 +111,7 @@ nav{
   width: 95vw;
   margin: 10px auto;
   text-align: center;
+  border-radius: 10px;
 }
 .code-show-box-cover h2{
   margin: 10px 0;
@@ -141,7 +139,36 @@ nav{
   pointer-events: none;
   z-index: 5
   
-}/*
+}
+.box{
+  width: 95%;
+  margin: 25px auto;
+  border-radius: 10px;
+  padding: 15px;
+
+}
+.box-cover{
+    filter: blur(15px);
+    opacity: 0%;
+    transform: translateY(20px); 
+}
+.box-nav{
+  width: 100%;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.box-nav svg{
+  transform: translateY(3px)
+}
+.box-nav p{
+  display: inline-block;
+}
+.box .box-description {
+  padding-left: 32px;
+}
+/*
 .style-code-box::selection{
   background: red;
   color: pink;
@@ -150,18 +177,18 @@ nav{
   animation-name: fade-in;
   animation-duration: 1.5s;
   animation-fill-mode: forwards;
- 
+
 }
 @keyframes fade-in{
   from{
     filter: blur(15px);
     opacity: 0%;
-    transform: translateY(20px)
+    transform: translateY(20px);
   }
   to{
     filter: blur(0px);
     opacity: 100%;
     transform: translateY(0);
-    pointer-events: visible
+    /* pointer-events: visible */
   }
 }
