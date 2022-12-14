@@ -3,7 +3,9 @@
   padding: 0;
   box-sizing: border-box;
   list-style: none;
-  font-family: var(--general-font)
+  font-family: var(--general-font);
+  color: var(--black-color);
+  background: var(--white-color);
   /* text-decoration: none; */
 }
 .padd-15{
@@ -63,8 +65,13 @@ header{
   overflow: hidden;
   z-index: 10;
 }
-header svg{
+header .logo, header img{
+  background: #0E1116;
+}
+header button, header svg{
   fill: #FFFFFF;
+  color: #000;
+   background: #0E1116;
 }
 header .nav-links{
   display: none;
@@ -84,6 +91,7 @@ header .nav-links li a:active{
   color: var(--mid-white-color);
 }
 nav{
+  background: #0E1116;
   width: 100%;
   height: 100%;
   display: flex;
