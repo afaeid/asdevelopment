@@ -4,6 +4,7 @@ window.addEventListener('scroll',()=>{
 fadeInElement.forEach((fie)=>{
  var fieHeight = fie.clientHeight;
  var fieTop = fie.offsetTop;
+ console.log(fieHeight)
  if(pageYOffset >= (fieTop/2)){
    fie.classList.add('fade-in')
  }

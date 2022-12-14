@@ -133,10 +133,10 @@ nav{
   height: 350px;
   margin: 10px 0;
   background: #FFFFFF;
-  filter: blur(15px);
+  /* filter: blur(15px); */
   opacity: 0%;
   transform: translateY(20px);
-  pointer-events: none;
+  /* pointer-events: none; */
   z-index: 5
   
 }
@@ -148,7 +148,7 @@ nav{
 
 }
 .box-cover{
-    filter: blur(15px);
+    /* filter: blur(15px); */
     opacity: 0%;
     transform: translateY(20px); 
 }
@@ -175,18 +175,18 @@ nav{
 }*/
 .fade-in{
   animation-name: fade-in;
-  animation-duration: 1.5s;
+  animation-duration: 0.8s;
   animation-fill-mode: forwards;
 
 }
 @keyframes fade-in{
   from{
-    filter: blur(15px);
+    /* filter: blur(15px); */
     opacity: 0%;
     transform: translateY(20px);
   }
   to{
-    filter: blur(0px);
+    /* filter: blur(0px); */
     opacity: 100%;
     transform: translateY(0);
     /* pointer-events: visible */
