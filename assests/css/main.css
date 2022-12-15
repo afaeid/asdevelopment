@@ -22,6 +22,13 @@ html{
 }
 body{
   background: var(--bg-color);
+  /* min-height: 300vh; */
+  padding: 0 0 15px 0;
+}
+main{
+  background: var(--bg-color);
+  min-height: 100vh;
+  /* padding: 0 0 15px 0; */
 }
 a{
  color: var(--black-color);
@@ -150,13 +157,14 @@ nav{
 }
 .box{
   width: 95%;
-  margin: 25px auto;
+  margin: 30px auto;
   border-radius: 10px;
   padding: 15px;
 
 }
 .box-cover{
     /* filter: blur(15px); */
+    background: var(--bg-color);
     opacity: 0%;
     transform: translateY(20px); 
 }
@@ -199,4 +207,7 @@ nav{
     transform: translateY(0);
     /* pointer-events: visible */
   }
+}
+svg{
+  fill: var(--black-color)
 }

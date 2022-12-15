@@ -5,7 +5,7 @@ fadeInElement.forEach((fie)=>{
  var fieHeight = fie.clientHeight;
  var fieTop = fie.offsetTop;
  console.log(fieHeight)
- if(pageYOffset >= (fieTop/2)){
+ if(pageYOffset >=  (fieTop/2)){
    fie.classList.add('fade-in')
  }
  else{

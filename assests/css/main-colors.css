@@ -10,5 +10,7 @@
 }
 .dark-theme{
   --black-color: #fff;
-  --white-color: #000
+  --white-color: #000;
+  --bg-color:#000;
+  --button-shadow: 1px 1px 5px 1px #484A60;
 }
